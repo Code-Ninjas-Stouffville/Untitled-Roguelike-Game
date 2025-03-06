@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8643795647493336931}
   - component: {fileID: 5992176678565126898}
   - component: {fileID: 2708796621099918474}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: enemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   hp: 3
+  boss: 0
 --- !u!50 &5992176678565126898
 Rigidbody2D:
   serializedVersion: 4

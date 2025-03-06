@@ -15,6 +15,10 @@ public class Room : MonoBehaviour
 
     public bool isplayerinroom;
 
+    public GameObject[] bgs;
+
+    private int bg;
+
     public Vector2Int RoomIndex { get; set; }
 
     public void OpenDoor(Vector2Int direction)
@@ -50,10 +54,12 @@ public class Room : MonoBehaviour
         if (isBossRoom)
         {
             Boss.SetActive(true);
+            bgs[0].SetActive(false);
         }
         else
         {
             Boss.SetActive(false);
+            bgs[1].SetActive(false);
         }
     }
 }
